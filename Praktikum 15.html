@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="framework/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pertemuan 15</title>
+</head>
+
+<body>
+    <div class="container pt-5">
+        <div class="card">
+            <div class="card-header bg-primary">
+                <h4 class="text-white mb-0">API Data Mahasiswa</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5">
+                        <form name="frmInput">
+                            <div class="form-group mt-2">
+                                <label class="mb-1" for="txNIM">NIM</label>
+                                <input type="text" class="form-control" name="nama" id="txNIM" required>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label class="mb-1" for="txKLS">Kelas</label>
+                                <input type="text" class="form-control" name="nama" id="txKLS" required>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label class="mb-1" for="txIDMK">Kode Mata Kuliah</label>
+                                <input type="text" class="form-control" name="nama" id="txIDMK" required>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2 w-100" id="cmdcari">Cari Data</button>
+                        </form>
+                    </div>
+
+                    <div class="col-3">
+                        <h3 class="mt-2">Data Nilai</h3>
+                        <div id="lbNIM">NIM<span id="vtxNIM">: 99999999</span></div>
+                        <div id="lbnama">Nama<span id="vtxNAMA">: NAMA MAHASISWA</span></div>
+                        <div class="mt-4">
+                            <h3>Data NILAI</h3>
+                            <div id="VNilai"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <h3 class="mt-2">Data Kehadiran</h3>
+                        <div>
+                            <div id="VHadir"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mt-2">
+            <small>*Code Mata Kuliah : TIW-005</small>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="framework/jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
